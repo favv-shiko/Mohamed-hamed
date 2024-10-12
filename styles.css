@@ -1038,30 +1038,100 @@ button:hover {
 .download-btn:hover {
     background-color: #45a049;
 }
-/* للأجهزة التي تكون شاشتها أقل من 768 بكسل */
-@media (max-width: 768px) {
-    /* اضبط الحاوية الرئيسية لتناسب الهاتف */
-    .container {
-      width: 90%; /* استخدام نسبة مئوية لتتناسب مع أي حجم */
-      padding: 10px; /* تقليل الهوامش */
+/* تحسين القوائم على الشاشات الصغيرة */
+@media only screen and (max-width: 768px) {
+
+    /* تحويل القوائم إلى أعمدة */
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      width: 100%;
     }
-    
-    /* تحسين حجم النصوص على الهواتف */
-    h1, h2, h3, p {
-      font-size: 16px; /* تكبير النص لسهولة القراءة */
+  
+    nav ul li {
+      list-style: none;
+      margin-bottom: 15px;
+      width: 100%;
     }
-    
-    /* ضبط الأزرار على الشاشة */
-    .button {
-      width: 100%; /* الأزرار تمتد على عرض الشاشة */
-      padding: 12px;
-      font-size: 18px;
+  
+    nav ul li a {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: center;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
     }
-    
-    /* ضبط الصور لتكون متجاوبة */
-    img {
-      max-width: 100%;
-      height: auto;
+  
+    /* تحسين حجم النص */
+    nav ul li a:hover {
+      background-color: #ddd;
+    }
+  }
+  /* إظهار زر القائمة المنسدلة فقط على الشاشات الصغيرة */
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      text-align: center;
+    }
+  
+    nav ul {
+      display: none; /* إخفاء القائمة بشكل افتراضي */
+    }
+  
+    .menu-toggle.active + nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+/* ضبط حجم الصور */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* تمركز الصور في الوسط */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+/* إضافة تأثير مرور الماوس على الروابط */
+nav ul li a {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+      /* تحسين حجم النصوص على الشاشات الصغيرة */
+body {
+    font-size: 1rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 1.2rem; /* زيادة حجم النص على الشاشات الصغيرة */
+    }
+  
+    h1, h2, h3 {
+      text-align: center; /* تمركز العناوين */
+      font-size: 1.5rem;
     }
   }
   
