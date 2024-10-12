@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع لخصتهالك</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <meta name="description" content="موقع يقدم لك مجموعة مميزة من الكتب والمقالات.">
+<meta name="keywords" content="كتب, مقالات, موارد تعليمية">
+<meta name="author" content="محمد حامد">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>موقع لخصتهالك</h1>
+            <div class="current-date" id="currentDate"></div>
+        </div>
+        <div class="header-content">
+            <div class="current-date" id="current-time"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">التقييمات</a></li>
+                    <li><a href="#">الموارد التعليمية</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>أهلاً بك في نظامنا</h1>
+    </header>
+    <div id="particles-js"></div>
+    <span id="typed"></span>
+    <div class="cards-section">
+        <h2>الكتب المدرسية</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h3>اللغة العربية</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <h3>الرياضيات</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔬</div>
+                <h3>العلوم</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <h3>اللغة الإنجليزية</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">📜</div>
+                <h3>التاريخ</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">📘</div>
+                <h3>الألمانية</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">📕</div>
+                <h3>الفرنسية</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">💡</div>
+                <h3>الفلسفة</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="external-books-section">
+        <h2>كتب خارجية</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-icon">📘</div>
+                <h3>كتاب المعاصر - عربي</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📗</div>
+                <h3>كتاب المعاصر - إنجليزي</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h3>كتاب المعاصر - رياضيات</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <h3>كتاب المعاصر - علوم</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📙</div>
+                <h3>كتاب المعاصر - تاريخ</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📕</div>
+                <h3>كتاب المعاصر - جغرافيا</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📓</div>
+                <h3>كتاب المعاصر - فلسفة</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">📔</div>
+                <h3>كتاب المعاصر - تكنولوجيا</h3>
+                <div class="button-container">
+                    <button class="view-button">رؤية</button>
+                    <button class="download-button">تحميل</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="ratings-section">
+        <h2>التقييمات</h2>
+        <div class="rating-container">
+            <div class="rating-card">
+                <h3>فلسفة</h3>
+                <div class="stars">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+                <p>حل و انت مطمن</p>
+                <a href="link-to-book-arabic.pdf" class="download-btn">تحميل</a>
+            </div>
+            <div class="rating-card">
+                <h3>تاريخ</h3>
+                <div class="stars">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+                <p>حل وانت مطمن</p>
+                <a href="link-to-book-english.pdf" class="download-btn">تحميل</a>
+            </div>
+            <div class="rating-card">
+                <h3>علوم</h3>
+                <div class="stars">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+                <p>حل وانت مطمن</p>
+                <a href="https://drive.google.com/file/d/1P_qUZashk5Ej46hraTg2P36Kb70Sx5wI/view?usp=sharing" class="download-btn">تحميل</a>
+            </div>
+            <div class="rating-card">
+                <h3>انجليزي</h3>
+                <div class="stars">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+                <p>حل وانت مطمن</p>
+                <a href="link-to-book-history.pdf" class="download-btn">تحميل</a>
+            </div>
+            <div class="rating-card">
+                <h3>عربي</h3>
+                <div class="stars">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+                <p>حل وانت مطمن</p>
+                <a href="link-to-book-history.pdf" class="download-btn">تحميل</a>
+            </div>
+            <div class="rating-card">
+                <h3>رياضة</h3>
+                <div class="stars">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+                <p>حل وانت مطمن</p>
+                <a href="link-to-book-history.pdf" class="download-btn">تحميل</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>حقوق الطبع والنشر &copy; 2024 موقع لخصتهالك. جميع الحقوق محفوظة.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

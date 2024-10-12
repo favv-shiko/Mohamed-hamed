@@ -1,0 +1,1040 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #3498db; /* خط تحت الهيدر */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cards-section, .external-books-section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background-color: #ecf0f1;
+    border-radius: 15px; /* زوايا ناعمة */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* تحريك البطاقة للأعلى عند التحويم */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* ظل أقوى عند التحويم */
+}
+
+.card-icon {
+    font-size: 50px;
+    color: #3498db; /* لون الأيقونة */
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #1c6698; /* لون أغمق عند التحويم */
+}
+
+.rating {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f39c12;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    font-family: 'Cairo', sans-serif; /* استخدام خط عصري وجميل */
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* لمنع التمرير الأفقي */
+}
+
+header {
+    background: linear-gradient(135deg, #2980b9, #2ecc71, #ff8c00); /* تدرج ألوان جميل */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #27ae60; /* خط تحت الهيدر */
+    animation: fadeIn 1s; /* تأثير ظهور الهيدر */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    animation: slideIn 1s; /* تأثير دخول */
+}
+
+.ratings-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7); /* تدرج ألوان للقسم */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s; /* تأثير تكبير */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* تدرج ألوان جميل للبطاقات */
+    border-radius: 15px; /* زوايا ناعمة */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* انتقال سلس */
+    position: relative;
+    opacity: 0; /* اجعلها غير مرئية عند التحميل */
+    animation: fadeInUp 0.5s forwards; /* تأثير ظهور لأعلى */
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+
+.card:hover {
+    transform: translateY(-5px); /* تحريك البطاقة لأعلى عند التحويم */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* تأثير ظل أكبر */
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #2980b9; /* لون أيقونات */
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #27ae60; /* لون زر جميل */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #219653; /* لون أغمق عند التحويم */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2980b9, #2ecc71); /* تدرج ألوان جميل */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1s; /* تأثير ظهور */
+}
+
+/* تأثيرات حركية */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #1abc9c, #3498db);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #27ae60;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* لون عند التحويم */
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.ratings-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #2980b9;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #219653;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2980b9, #2ecc71);
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+/* تأثيرات حركية */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #1abc9c, #3498db);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #27ae60;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* لون عند التحويم */
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.ratings-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #2980b9;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #219653;
+    transform: scale(1.05); /* تأثير تكبير عند التحويم */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2980b9, #2ecc71);
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+/* تأثيرات حركية */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* لمنع التمرير الجانبي */
+}
+
+header {
+    background: linear-gradient(90deg, #2c3e50, #3498db);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #2980b9; /* خط تحت الهيدر */
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db; /* لون أغمق عند التحويم */
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    top: 100%; /* ظهور القائمة تحت العنصر */
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    color: #2c3e50;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0; /* لون خلفية عند التحويم */
+}
+
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.cards-section, .external-books-section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #ecf0f1;
+    border-radius: 15px; /* زوايا ناعمة */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* تكبير خفيف عند التحويم */
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #3498db;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.view-button, .download-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #2980b9; /* لون أغمق عند التحويم */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    position: relative;
+}
+/* styles.css */
+
+/* ... باقي الكود كما هو ... */
+
+nav {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px; /* إضافة padding لزيادة المساحة حول النص */
+    border-radius: 25px; /* زوايا مستديرة */
+    background: rgba(255, 255, 255, 0.2); /* خلفية شفافة قليلاً */
+    transition: color 0.3s, background 0.3s; /* إضافة transition للخلفية */
+}
+
+.nav-links a:hover {
+    color: #3498db; /* لون أغمق عند التحويم */
+    background: rgba(255, 255, 255, 0.4); /* تغيير الخلفية عند التحويم */
+}
+
+/* ... باقي الكود كما هو ... */
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.parallax {
+    background-image: url('your-3d-background.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    color: #000000;
+    overflow-x: hidden;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 180px;
+    animation: fadeIn 0.5s forwards;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.button {
+    background-color: #ff5733; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    padding: 10px 20px; /* المساحة حول النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* زوايا دائرية */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    transition: background-color 0.3s ease; /* تأثير انتقال عند التغيير */
+}
+
+.button:hover {
+    background-color: #c70039; /* لون جديد عند التمرير */
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* لتكون الخلفية خلف كل العناصر الأخرى */
+}
+h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fall {
+    animation: fall 1s ease forwards;
+}
+body {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background: linear-gradient(to right, #4a90e2, #8e44ad);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* For positioning particles */
+    overflow: hidden; /* To hide particles overflow */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Behind other elements */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2em;
+}
+
+.cards-section, .external-books-section {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    font-size: 3em;
+}
+
+.button-container {
+    margin: 10px 0;
+}
+
+.view-button, .download-button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s ease;
+}
+
+.view-button:hover, .download-button:hover {
+    background: #357ab8;
+}
+
+.rating {
+    color: #ffd700; /* Gold color for ratings */
+}
+
+.ratings-section {
+    background: #e2e2e2;
+    padding: 20px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stars {
+    margin: 10px 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffd700;
+}
+
+/* Animations */
+.animate {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+button:hover {
+    background: #ffd700; /* لون الخلفية الذهبي عند التمرير */
+    color: #333; /* تغيير لون النص عند التمرير */
+    transform: scale(1.1); /* تكبير الزر قليلاً */
+    transition: all 0.3s ease; /* تأثير الانتقال */
+}
+.ratings-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.rating-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.rating-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.rating-card:hover {
+    transform: scale(1.05);
+}
+
+.rating-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.stars {
+    margin-bottom: 10px;
+}
+
+.stars span {
+    font-size: 1.2rem;
+    color: #f0d64f;
+}
+
+.rating-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
